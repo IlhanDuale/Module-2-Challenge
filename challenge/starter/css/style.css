@@ -10,29 +10,36 @@ body {
     background-color: white;
 }
 
-nav {
-    width: 100%;
-    padding: 10px 20px;
-    background-color: grey;
+.header {
+    width: auto;
+    padding: 10px;
+    background-color: #708090;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: larger;
+    z-index: auto;
 }
 
-nav ul {
+.logo {
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-nav ul li {
-    justify-content: center;
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin-left: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
     padding: 0px 5px;
-    list-style-type: none;
-}
-
-nav ul li a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1,
@@ -43,9 +50,85 @@ h5,
 h6 {
     margin: 0;
     color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 p {
     margin: 0;
 }
+
+.hero-banner {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    background-color: grey;
+    justify-content: space-between;
+}
+
+.hero-banner div {
+    width: auto;
+}
+
+img {
+    width: 200px;
+    max-width: 100%;
+    margin: 20px 10px;
+}
+
+#page-wrapper {
+    background-color: grey;
+    padding: 10px;
+    min-height: 500px;
+    width: auto;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+#first-section {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+#second-section {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+#third-section {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    .navbar.active {
+        display: block;
+    }
+}
+
+
+/*.
+code that has been removed
+page-wrapper {
+    background-color: grey;
+    display: flex;
+    margin: 50px;
+    padding: 20px 20px;
+    border: 10%;
+    border-style: solid;
+    justify-content: center;
+}*/
