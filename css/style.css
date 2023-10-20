@@ -83,9 +83,8 @@ img {
     justify-content: center;
 }
 
-#first-section {
+#first-section #second-section #third-section {
     display: flex;
-    flex-direction: row;
     flex-basis: 30%;
     align-items: center;
     justify-content: center;
