@@ -77,13 +77,24 @@ img {
 #page-wrapper {
     background-color: grey;
     padding: 10px;
-    min-height: 500px;
-    display: flex;
     margin: 10px;
     justify-content: center;
 }
 
-#first-section #second-section #third-section {
+#first-section {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#second-section {
+    display: flex;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content: right;
+}
+
+#third-section {
     display: flex;
     flex-basis: 30%;
     align-items: center;
